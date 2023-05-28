@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+}
+
+.hero {
+    background: url('https://images.unsplash.com/photo-1668958930278-99a0d36d9684?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80') center/cover no-repeat;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.banner {
+    background: white;
+    padding: 2rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.banner-title {
+    letter-spacing: 0.1em;
+}
+
+.modal-button {
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: teal;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.modal-button:hover {
+    color: black;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(73, 166, 233, 0.5);
+    visibility: hidden;
+    z-index: -10;
+}
+
+.open-modal {
+    z-index: 10;
+    visibility: visible;
+}
+
+.modal-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.modal-title {
+    letter-spacing: 0.1em;
+}
+
+.modal-close-button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: crimson;
+}
